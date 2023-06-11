@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(164, 164, 164);
+}
+.container{
+    margin: 50px 10px;
+}
+.container h1{
+    padding: 10px;
+    color: rgb(20, 105, 8);
+}
+
+.board{
+    margin: 20px 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+.row{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row button{
+    width: 70px;
+    height: 70px;
+    padding: 8px 20px;
+    margin: 3px 3px;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(64, 64, 64);
+    /* color: blanchedalmond; */
+    box-shadow: 2px 3px rgb(92, 79, 79);
+    
+}
+.active{
+    color: rgb(255, 235, 205);
+}
+.hidden{
+    color:rgb(64, 64, 64);
+}
+
+.row button:active{
+    transform: scale(0.90);
+    box-shadow: 0 0 rgb(115, 113, 113);
+    /* transition: 0.3s; */
+}
+
+.restart button{
+    margin: 15px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 550;
+    background-color: azure;
+    border-radius: 3px;
+    box-shadow: 2px 2px rgb(245, 60, 60);
+    color: rgb(0, 0, 0);
+
+}
+.restart button:active{
+    transform: scale(0.90);
+    box-shadow: 0 0 rgb(115, 113, 113);
+    /* transition: 0.3s; */
+}
+
+.players{
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.value{
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+
+.popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.popup-content {
+    background-color: rgb(255, 255, 255);
+    margin: 10% auto;
+    padding: 20px;
+    width: 30%;
+    font-weight: bolder;
+}
+.popup-content button {
+    display: block;
+    padding: 5px;
+    margin: 10px auto;
+    background-color: rgb(221, 148, 148);
+}
+.show {
+    display: block;
+}
+
+
